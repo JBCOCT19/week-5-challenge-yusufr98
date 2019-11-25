@@ -49,6 +49,9 @@
     flex-basis: 20%;
     padding: 0;
 }
+.card-body-collapse{
+    padding: 0;
+}
 .card-list {
     height: 200px;
     display: flex;
@@ -72,6 +75,9 @@ h1 {
 .navbar{
     font-family: 'Josefin Sans', sans-serif;
     background-color: black!important;
+}
+.nav-link {
+    color: #cb52bf;
 }
 p {
     font-family: 'Josefin Sans', sans-serif;
