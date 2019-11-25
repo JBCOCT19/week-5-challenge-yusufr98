@@ -71,6 +71,7 @@ h1 {
 }
 .navbar{
     font-family: 'Josefin Sans', sans-serif;
+    background-color: black!important;
 }
 p {
     font-family: 'Josefin Sans', sans-serif;
