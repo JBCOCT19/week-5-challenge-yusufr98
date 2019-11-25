@@ -3,21 +3,12 @@
 <head th:replace="base :: headstuff"></head>
 <body>
 <nav th:replace="base :: navbar"></nav>
-<section class="hero">
-    <div class="hero-inner">
-        <h1>Your job search ends here!</h1>
-        <form class="form form-inline form-hero mx-auto" th:action="@{/search}" method="post">
-            <input class="form-control mr-sm-2" type="search" name="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fas fa-search"></i></button>
-        </form>
-    </div>
-</section>
 <div class="container col-md-8">
     <div th:if="${jobs.size() == 0}">
         <h1>There's nothing here.</h1>
         <p style="text-align: center;">Try a new search or return <a href="/">home</a></p>
     </div>
-    <div th:each="job : ${jobs}">
+    <div th:each="job: ${jobs}">
         <div class="card card-list mb-3 animated fadeInUp">
             <div class="card-horizontal">
                 <div class="card-header col-md-3">

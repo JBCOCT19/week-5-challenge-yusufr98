@@ -4,6 +4,40 @@
     padding-right: 0;
     width:100%;
 }
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(https://www.getsmarter.com/blog/wp-content/uploads/2017/02/Career-Goals-Job-Search-Emails-Banner-6.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 10px;
+    color:#d36ac7;
+}
+.hero .form-hero {
+    display: block;
+    width: 400px;
+    padding: 1em;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.hero h1 {
+    /* Text styles */
+    font-size: 5em;
+
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
 .card-header {
     font-size: 1.25em;
     font-family: 'Josefin Sans', sans-serif;
@@ -16,7 +50,7 @@
     padding: 0;
 }
 .card-list {
-    height: 180px;
+    height: 200px;
     display: flex;
     align-items: center;
     margin-bottom: 1rem;
@@ -27,7 +61,7 @@
 .card img {
     display: block;
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
 }
 h1 {

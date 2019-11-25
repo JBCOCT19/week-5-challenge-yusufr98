@@ -39,7 +39,7 @@ public class HomeController {
     @PostMapping("/search")
     public String search(Model model, @RequestParam("search") String s){
         model.addAttribute("jobs", jobRepository.findByAuthorContainingIgnoreCaseOrTitleContainingIgnoreCaseOrDescriptionContainingIgnoreCase(s,s,s));
-        return "index";
+        return "search";
     }
     @PostMapping("/process")
     public String processForm(@Valid @ModelAttribute Job job, @RequestParam("file")MultipartFile file){
